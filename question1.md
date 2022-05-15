@@ -452,4 +452,11 @@ print('The new Average Order Value is ${:.2f}'.format(new_aov))
 Output:
 The new Average Order Value is $305.69
 ```
-### Conclusion: An average order value of $305.69 makes much more sense and is a better evaluation of the data.
+We can now check the distribution of order_amount again with a new boxplot.
+
+![alt text](Boxplot2.png)
+
+The data is now much more condensed.
+
+### Conclusion: An average order value of $305.69 (after modifying data) is a better evaluation of the data.
+

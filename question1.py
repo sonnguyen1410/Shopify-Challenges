@@ -55,3 +55,8 @@ print('======================================')
 # Now we calculate the Average Order Value based on newly modified dataset
 new_aov = shopify_new_df['order_amount'].mean()
 print('The new Average Order Value is ${:.2f}'.format(new_aov)) # this value makes more sense to our data
+
+# Check the new distribution of order_amount in a boxplot
+sns.set(style="darkgrid")
+g = sns.boxplot(x = shopify_new_df['order_amount'])
+plt.show() # The data are more condensed
