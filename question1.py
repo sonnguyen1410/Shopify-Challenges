@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # importing dataset:
 shopify_df = pd.read_csv("shopify_dataset.csv")
-#print(shopify_df.head())
+print(shopify_df.head())
 
 # this is the naive calculation of average order value 
 naive_aov = shopify_df['order_amount'].mean()
