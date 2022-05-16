@@ -15,13 +15,11 @@
 cd Shopify-Challenges
 ```
 
-* Create virtual environment: 
+* Create and activate virtual environment (For Windows): 
 ```
-pip install virtualenv
+py -3 -m venv .venv
 
-virtualenv venv -python=python3
-
-source venv/bin/activate
+.venv\scripts\activate
 ```
 * Install required packages
 ```
