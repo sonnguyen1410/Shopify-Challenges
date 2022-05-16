@@ -7,7 +7,7 @@ Answer: 54
 
 Queries:
 ```sql
-SELECT S.ShipperName AS Shipper, COUNT(OrderID) AS NumberOfOrder
+SELECT S.ShipperName AS Shipper, COUNT(OrderID) AS Number_Of_Orders
 FROM Orders O
 LEFT JOIN Shippers S
 WHERE O.ShipperID = S.ShipperID
@@ -15,10 +15,10 @@ GROUP BY Shipper;
 ```
 Result:
 ```
-Shipper	NumberOfOrder
-Federal Shipping	68
-Speedy Express	54
-United Package	74
+Shipper	            Number_Of_Orders
+Federal Shipping	    68
+Speedy Express	        54
+United Package	        74
 ```
 
 b. What is the last name of the employee with the most orders?
@@ -38,12 +38,12 @@ LIMIT 5;
 
 Result:
 ```
-Employee_Last_Name	Number_Of_Orders
-Peacock	40
-Leverling	31
-Davolio	29
-Callahan	27
-Fuller	20
+Employee_Last_Name	    Number_Of_Orders
+Peacock	                        40
+Leverling	                    31
+Davolio	                        29
+Callahan	                    27
+Fuller	                        20
 ```
 
 c. What product was ordered the most by customers in Germany?
@@ -68,10 +68,10 @@ LIMIT 5;
 
 Result:
 ```
-ProductName	Country	Number_Of_Orders
-Gorgonzola Telino	Germany	5
-Lakkalikööri	Germany	4
-Boston Crab Meat	Germany	4
-Tunnbröd	Germany	3
-Mozzarella di Giovanni	Germany	3
-```
+ProductName                 Country	        Number_Of_Orders
+Gorgonzola Telino	        Germany	                5
+Lakkalikööri	            Germany	                4
+Boston Crab Meat	        Germany	                4
+Tunnbröd	                Germany	                3
+Mozzarella di Giovanni	    Germany	                3
+``` 
